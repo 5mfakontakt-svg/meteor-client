@@ -1,6 +1,6 @@
 /*
- * This file is part of the Meteor Client distribution (https://github.com/MeteorDevelopment/meteor-client).
- * Copyright (c) Meteor Development.
+ * This file is part of the Astra Client distribution.
+ * Copyright (c) Astra Client.
  */
 
 package meteordevelopment.meteorclient;
@@ -48,7 +48,8 @@ import java.io.File;
 import java.lang.invoke.MethodHandles;
 
 public class MeteorClient implements ClientModInitializer {
-    public static final String MOD_ID = "meteor-client";
+    // ID musi zostać "meteor-client" — zgadza się z nazwami plików mixinów i strukturą folderów
+    public static final String MOD_ID = "astra-client";
     public static final ModMetadata MOD_META;
     public static final String NAME;
     public static final Version VERSION;
@@ -65,7 +66,8 @@ public class MeteorClient implements ClientModInitializer {
     static {
         MOD_META = FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow().getMetadata();
 
-        NAME = MOD_META.getName();
+        // Wymuszenie własnej nazwy zamiast tej z fabric.mod.json
+        NAME = "Astra Client";
         LOG = LoggerFactory.getLogger(NAME);
 
         String versionString = MOD_META.getVersion().getFriendlyString();
