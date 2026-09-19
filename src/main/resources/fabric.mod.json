@@ -1,20 +1,13 @@
 {
   "schemaVersion": 1,
-  "name": "Meteor Client",
-  "id": "meteor-client",
+  "name": "Astra Client",
+  "id": "astra-client",
   "version": "${version}",
-  "description": "Based utility mod.",
+  "description": "totalna dominacja i rozjeba z tym cheatem",
   "authors": [
-    "MineGame159",
-    "squidoodly",
-    "seasnail"
+    "5mfa"
   ],
-  "contact": {
-    "homepage": "https://meteorclient.com",
-    "issues": "https://github.com/MeteorDevelopment/meteor-client/issues",
-    "sources": "https://github.com/MeteorDevelopment/meteor-client",
-    "discord": "https://meteorclient.com/discord"
-  },
+  "contact": {},
   "license": "GPL-3.0",
   "icon": "assets/meteor-client/icon.png",
   "environment": "client",
@@ -39,14 +32,7 @@
     "meteor-client:build_number": "${build_number}",
     "meteor-client:color": "145,61,226",
     "meteor-client:commit": "${commit}",
-    "modmenu": {
-      "links": {
-        "modmenu.discord": "https://meteorclient.com/discord"
-      }
-    },
-    "badoptimizations:cache_hooks": {
-      "lightmap": "meteordevelopment.meteorclient.modintegration.BadOptimizationsHook"
-    }
+    "modmenu": {}
   },
   "depends": {
     "java": ">=${jdk_version}",
