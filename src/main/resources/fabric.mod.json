@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "Astra Client",
-  "id": "astra-client",
+  "id": "meteor-client",
   "version": "${version}",
   "description": "totalna dominacja i rozjeba z tym cheatem",
   "authors": [
