@@ -48,8 +48,8 @@ import java.io.File;
 import java.lang.invoke.MethodHandles;
 
 public class MeteorClient implements ClientModInitializer {
-    // ID musi zostać "meteor-client" — zgadza się z nazwami plików mixinów i strukturą folderów
-    public static final String MOD_ID = "astra-client";
+    // ID zostaje "meteor-client" — zgodne z nazwami plików mixinów i folderem assets
+    public static final String MOD_ID = "meteor-client";
     public static final ModMetadata MOD_META;
     public static final String NAME;
     public static final Version VERSION;
@@ -66,7 +66,7 @@ public class MeteorClient implements ClientModInitializer {
     static {
         MOD_META = FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow().getMetadata();
 
-        // Wymuszenie własnej nazwy zamiast tej z fabric.mod.json
+        // Własna nazwa widoczna w HUD, GUI i logach
         NAME = "Astra Client";
         LOG = LoggerFactory.getLogger(NAME);
 
